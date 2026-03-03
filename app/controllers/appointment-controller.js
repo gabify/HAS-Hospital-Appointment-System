@@ -20,10 +20,10 @@ const getAllAppointments = async(req, res) =>{
 }
 
 const getAppointmentUsingPatientId = async(req, res) =>{
-    const {appointmentId} = req.params
+    const {patientId} = req.params
 
     try{
-        const appointment = await Appointment.findById({_id: appointmentId});
+        const appointment = await Appointment.find({patientId});
         res.status(200).json(appointment);
     }catch(err){
         console.log(err);
