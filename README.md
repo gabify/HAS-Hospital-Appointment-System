@@ -24,26 +24,26 @@ Each subsystem exposes REST-like endpoints.
 ``` Bash
 GET /api/patients
 GET /api/patients/{id}
-POST /patients/
+POST /api/patients/
 ```
 - Appointment Scheduling
 ``` Bash
 GET /api/appointment
 GET /api/appointment/{patientId}
-POST /appointment/
+POST /api/appointment/
 ```
 
 - Consultation Management
 ``` Bash
 GET /api/consultation/{patientId}
-POST /consultation/
+POST /api/consultation/
 ```
 
 - Billing Management
 ``` Bash
 GET /api/billing/{patientId}
-POST /billing/
-PUT /billing/{billingId}/mark-paid
+POST /api/billing/
+PUT /api/billing/{billingId}/mark-paid
 ```
 
 ## Academic Exercise Context
